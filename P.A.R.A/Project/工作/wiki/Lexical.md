@@ -59,3 +59,7 @@ useEffect(() => {
 }, [])
 return false
 ```
+
+调试发现：
+当在段落进行回格时，段落P的文本节点W和节点A被合并到段落P了。导致上述判断 `anchor.key === ancestorNodeFirstChild?.getKey()` 失效。
+
