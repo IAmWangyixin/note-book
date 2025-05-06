@@ -71,8 +71,9 @@ useEffect(() => {
     const areaActive = areaActiveRef.current;
     const areaA = document.getElementById('areaA')
     const areaB = document.getElementById('areaB')
-    if (areaA)
-
+    if (areaActive.contains(areaA)) {
+      
+    }
   }
 
   document.addEventListener('mousedown', handleClickOutside, true);
